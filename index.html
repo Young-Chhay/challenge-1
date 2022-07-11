@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+    <title>Horiseon</title>
 </head>
 
 <body>
+<!-- changed div to Header sectionInstead of using DIVs. I Improve the whole web structure to have it follow Semantics elements like 
+    Header,Nav, Main, Article, Sections, Aside, Nav, footers, This help improve website accessibility for disabled people.-->
     <header>
         <h1>Hori<span class="seo">seo</span>n</h1>
         <nav>
@@ -27,9 +29,11 @@
 
     <div class="hero"> </div>
 
+<!-- Apply Main, Article and reclassify Classes and ID. This help improve CSS styling and accessbility. -->
     <main>
         <article>  
             <section class="content">
+<!-- /* Instead of having 3 different class for the images section, I consolidated them into class="contents block" in doing so, I was able to improve efficiency of the styling. */ -->
                 <section class="Contents-block">
                     <img class="float-left" src="./assets/images/search-engine-optimization.jpg" title="Search Engine Optimization" alt="Search engine Optimization" />
                     <h2>Search Engine Optimization</h2>
@@ -39,6 +43,7 @@
                 </section>
 
                 <section class="Contents-block">
+<!-- removed error for duplicate class and ID,  Apply only id "float-right" for easy styling -->
                     <img id="float-right" src="./assets/images/online-reputation-management.jpg" title="Online Reputation Management" alt="online Repuation Management" />
                     <h2>Online Reputation Management</h2>
                     <p>
@@ -55,9 +60,12 @@
                 </section>
             </section>
 
+<!-- Apply Aside instead of using divs -->
             <aside class="benefits">
+<!-- apply "Aside-benefit" class for images so that they can be easily styled together on CSS -->
                 <aside class="aside-benefit">
                     <h3>Lead Generation</h3>
+ <!-- apply "logo-aside" class for images so that they can be easily styled together on CSS -->
                     <img class="logo-aside" src="./assets/images/lead-generation.png" title="Lead Generation" alt="Lead Generation"/>
                     <p>
                         Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
@@ -82,6 +90,7 @@
     </main>
 
     <footer class="footer">
+<!-- change h2 to H3 so that the text size automatically adjust to 16px. Doing so remove the necessity to use CSS styling. -->
         <h3>Made with ❤️️ by Horiseon</h3>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.

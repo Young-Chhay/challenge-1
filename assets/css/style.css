@@ -68,6 +68,8 @@ body {
     margin-left: 20px;
 }
 
+/* Instead of having 3 different class for the images section and Asides sections, I consolidated them into class="contents-block", "Logo-aside", 
+in doing so, I was able to improve efficiency of the styling. */
 .Contents-block {
     margin-bottom: 20px;
     padding: 50px;
@@ -99,6 +101,7 @@ body {
     background-color: #2589bd;
 }
 
+/* Apply styling directly on aside instead of using Classes. */
 aside {
     margin-bottom: 32px;
     color: #ffffff;
@@ -116,3 +119,5 @@ aside {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+
+/* removed .footer h2 styling. */
